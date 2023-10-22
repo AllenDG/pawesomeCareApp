@@ -7,13 +7,13 @@ import HeaderComp from "../components/HeaderComp";
 export default function Register({ navigation }) {
   return (
     <View style={styles.page}>
-      <HeaderComp title="Sign Up" onPress={() => navigation.goBack()} />
+     <Text style={styles.text}>Sign Up</Text>
       <View style={{ height: 40 }}></View>
       <View style={styles.container}>
-        <InputComp label="Full Name" />
+        <InputComp label="First Name" />
         <View style={{ height: 24 }}></View>
 
-        <InputComp label="Contact Number" />
+        <InputComp label="Last Name" />
         <View style={{ height: 24 }}></View>
 
         <InputComp label="Email Addres" />
@@ -37,5 +37,14 @@ const styles = StyleSheet.create({
   },
   page: {
     marginTop: 30,
+  },
+  text: {
+    color: "#000",
+    fontSize: 30,
+    fontWeight: "bold",
+    marginVertical: 80,
+    maxWidth: 170,
+    marginLeft: 45,
+  
   },
 });

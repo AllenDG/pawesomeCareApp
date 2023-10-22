@@ -16,6 +16,8 @@ import ProfileUser from "./src/pages/mainApp/ProfileUser";
 import Register from "./src/pages/Register";
 import Splash from "./src/pages/Splash";
 import UploadPhoto from "./src/pages/UploadPhoto";
+import Profile from "./src/pages/mainApp/ProfileUser";
+import view from "./src/pages/mainApp/Appointment";
 
 // Create Stack Navigation
 const Stack = createStackNavigator();
@@ -25,9 +27,8 @@ const Tab = createBottomTabNavigator();
 const MainApp = () => {
   return (
     <Tab.Navigator tabBar={(props) => <ButtomTabNavigator {...props} />}>
-     <Tab.Screen name="Home" component={Hospital} />
-      <Tab.Screen name="Doctor" component={Home} />
-     
+      <Tab.Screen name="View" component={view} />
+      <Tab.Screen name="Profile" component={Profile} />
       <Tab.Screen name="Chat" component={Chat} />
     </Tab.Navigator>
   );

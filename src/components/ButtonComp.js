@@ -16,14 +16,13 @@ export default function ButtonComp({ type, title, onPress, icon }) {
 
 const styles = StyleSheet.create({
   container: (type) => ({
-    backgroundColor: type === "secondary" ? "white" : "#0BCAD4",
+    backgroundColor: type === "secondary" ? "white" : "#1E3A8A",
     paddingVertical: 10,
     borderRadius: 10,
   }),
   text: (type) => ({
     fontSize: 16,
-    // fontWeight: 600,
     textAlign: "center",
-    color: type === "secondary" ? "#112340" : "White",
+    color: type === "secondary" ? "#112340" : "white", // Use lowercase "white"
   }),
 });

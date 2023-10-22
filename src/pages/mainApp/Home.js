@@ -14,26 +14,9 @@ export default function Home({ navigation }) {
           <View style={styles.wrapperSection}>
             <GapComp height={30} />
             <SectProfile onPress={() => navigation.navigate("Profile")} />
-            <Text style={styles.welcome}>
-             Hello! Welcome to Pawesome Care 
-            </Text>
+           
           </View>
-          <View style={styles.wrapperScroll}>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-              <View style={styles.category}>
-                {/* biar g kepotong mas scroll */}
-                <GapComp width={32} />
-                <DoctorCategory
-                  onPress={() => navigation.navigate("ChoseDoctor")}
-                />
-                <DoctorCategory />
-                <DoctorCategory />
-                <DoctorCategory />
-                <DoctorCategory />
-                <GapComp width={22} />
-              </View>
-            </ScrollView>
-          </View>
+          
           <View style={styles.wrapperSection}>
             <Text style={styles.sectionlabel}>Top Rated Doctors</Text>
             <DoctorRtaed

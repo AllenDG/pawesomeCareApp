@@ -15,11 +15,7 @@ export default function DoctorRtaed({ onPress }) {
         onPress={onPress}
       />
       <View style={styles.rate}>
-        <ILStar />
-        <ILStar />
-        <ILStar />
-        <ILStar />
-        <ILStar />
+       
       </View>
     </TouchableOpacity>
   );

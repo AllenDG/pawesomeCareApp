@@ -7,7 +7,7 @@ import BtnIconComp from "./BtnIconComp";
 export default function InputChat() {
   return (
     <View style={styles.page}>
-      <TextInput placeholder="Ketik pesan ...." style={styles.input} />
+      <TextInput placeholder="text" style={styles.input} />
       <BtnIconComp disable={true} />
     </View>
   );
