@@ -6,7 +6,6 @@ import ButtonComp from "./ButtonComp";
 export default function HeaderComp({ title, onPress, type }) {
   return (
     <View style={styles.container(type)}>
-      {/* <ILarrow /> */}
       <ButtonComp
         type="icon-only"
         icon={type === "dark" ? "back-light" : "back-dark"}
@@ -21,7 +20,7 @@ const styles = StyleSheet.create({
   container: (type) => ({
     paddingHorizontal: 16,
     paddingVertical: 30,
-    backgroundColor: type === "dark" ? "#112340" : "white",
+    backgroundColor: type === "dark" ? "#112340" : "#f5f5f5", // Changed to gray color
     flexDirection: "row",
     alignItems: "center",
     borderBottomRightRadius: type === "dark" ? 20 : 0,

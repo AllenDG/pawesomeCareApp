@@ -1,21 +1,20 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, ScrollView } from "react-native";
 import { DumyProfile1 } from "../../assets";
 import HeaderComp from "../../components/HeaderComp";
 import ListDoctor from "../../components/ListDoctor";
 import ProfileComp from "../../components/ProfileComp";
 
-
 export default function ProfileUser({ navigation }) {
   return (
-    <View>
-      <HeaderComp title="Profile" onPress={() => navigation.goBack()} />
+    <ScrollView contentContainerStyle={styles.container}>
+    
       <View style={styles.profile}>
         <ProfileComp name="Jedyne Ziah C. De Guzman" desc="Manggagamot" />
       </View>
       <View style={styles.list}>
         <ListDoctor
-          img={DumyProfile1}
+          img={DumyProfile1} 
           name="Edit Profile"
           desc="Last updated yesterday"
           type="dark"
@@ -40,11 +39,14 @@ export default function ProfileUser({ navigation }) {
           type="dark"
         />
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flexGrow: 1,
+  },
   list: {
     marginHorizontal: 16,
   },

@@ -1,7 +1,7 @@
 import { ImageBackground, StyleSheet, Text, View } from "react-native";
 import React from "react";
 
-import ILbg from "../assets/illustration/bg.jpg"
+import ILbg from "../assets/illustration/started.jpg"
 import ButtonComp from "../components/ButtonComp";
 
 export default function Getstarted({ navigation }) {
@@ -9,11 +9,9 @@ export default function Getstarted({ navigation }) {
     <ImageBackground source={ILbg} style={styles.page}>
       <View>
         
-        <Text style={styles.text}>
-        Pawesome Care is the perfect companion for pet owners, providing all the tools and resources you need to ensure the best possible care 
-        </Text>
+
       </View>
-      <View>
+      <View style={{marginBottom: 40}} >
         <ButtonComp
           title="Get Started"
           onPress={() => navigation.navigate("Register")}

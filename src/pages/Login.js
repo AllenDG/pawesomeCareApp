@@ -1,14 +1,14 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-
 import ButtonComp from "../components/ButtonComp";
 import InputComp from "../components/InputComp";
 import LinkComp from "../components/LinkComp";
 
+
 export default function Login({ navigation }) {
   return (
     <View style={styles.container}>
-      
+    
       <Text style={styles.text}>Login</Text>
       <View style={{ height: 40 }}></View>
 
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: "#000",
-    fontSize: 45,
+    fontSize: 30,
     fontWeight: "bold",
     marginVertical: 40,
     maxWidth: 170,

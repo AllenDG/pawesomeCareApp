@@ -16,7 +16,7 @@ export default function Hospital() {
           <ListHospital />
           <ListHospital />
           <ListHospital />
-          <ListHospital />
+          
         </View>
       </View>
     </View>
